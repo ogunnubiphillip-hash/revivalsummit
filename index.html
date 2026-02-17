@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs 
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Home | National Revival Summit</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const slides = document.querySelectorAll(".hero-slide");
+    let current = 0;
+
+    setInterval(() => {
+        const currentSlide = slides[current];
+        currentSlide.classList.remove("active");
+        currentSlide.classList.add("exit");
+
+        current = (current + 1) % slides.length;
+        const nextSlide = slides[current];
+        nextSlide.classList.add("active");
+
+        setTimeout(() => {
+            currentSlide.classList.remove("exit");
+        }, 1200);
+
+    }, 6000);
+});
+</script>
+
+<body id="top">
+
+    <!-- preloader
+    ================================================== -->
+   <div id="preloader">
+    <div id="loader" class="logo-loader">
+        <img src="images/logo.png" alt="Logo">
+    </div>
+</div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png"  style="width:auto; height:50px;" alt="Homepage">
+            </a>
+            <span class="logo-text"></span>
+        </div>
+
+        <nav class="header-nav-wrap">
+    <ul class="header-nav">
+
+        <li class="current">
+            <a href="index.html" style="color: goldenrod;">Home</a>
+        </li>
+
+        <li>
+            <a href="about.html">About</a>
+        </li>
+
+        <li class="has-submenu">
+    <span class="submenu-toggle">Theme ▾</span>
+
+    <ul class="submenu">
+        <li><a href="theme-overview.html">Theme Overview</a></li>
+        <li><a href="program-details.html">More About the Program</a></li>
+        <li><a href="prayer-outline.html">Prayer Outline</a></li>
+    </ul>
+</li>
+
+
+        <li>
+            <a href="speakers.html">Speakers</a>
+        </li>
+
+         <li>
+            <a href="contact.html">Contact</a>
+        </li>
+
+        <li class="nav-donate">
+            <a href="give-support.html" class="donate-btn">Give/support</a>
+        </li>
+
+    </ul>
+</nav>
+
+
+        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+   <section class="s-hero hero-slider" > 
+
+    <div class="hero-slide active" style="background-image: url('images/hero-bg-1.jpg'); height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div style="text-align: center; max-width: 100%; padding: 0 20px;">
+            <h1 style="text-align: center; font-size: 50px; font-weight: lighter;">
+                National Revival Summit:
+            </h1>
+
+        <h2 style="font-size: 40px; color: white; margin-top: -5px;">"THE OATH 2026"</h2>
+            <div class="date-box" style="margin-top: 15px;">
+                August 7th & 8th
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('images/hero-bg-2.jpg'); height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div style="text-align: center; max-width: 100%; padding: 0 20px;">
+            <h1 style="text-align: center; font-size: 50px; font-weight: lighter;">
+                A Call to Consecration, 
+            </h1>
+
+            <h2 style="font-size: 40px; color: white; margin-top: -5px;">Leadership & Impact</h2>
+        </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('images/hero-bg-3.jpg'); height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div style="text-align: center; max-width: 100%; padding: 0 20px;">
+            <h1 style="text-align: center; font-size: 50px; font-weight: lighter;">
+                Equipping Lives to 
+            </h1>
+
+            <h2 style="font-size: 40px; color: white; margin-top: -5px;">Influence the World Through Christ</h2>
+        </div>
+    </div>
+
+    
+
+</section>
+
+
+     <!-- COUNTDOWN TIMER -->
+<!-- COUNTDOWN TIMER -->
+<!-- COUNTDOWN TIMER -->
+<section class="countdown-wrapper">
+    <div class="countdown" >
+
+        <div class="countdown-item">
+            <div class="counter">
+                <span id="days">00</span>
+            </div>
+            <small>Days</small>
+        </div>
+
+        <div class="countdown-item">
+            <div class="counter">
+                <span id="hours">00</span>
+            </div>
+            <small>Hours</small>
+        </div>
+
+        <div class="countdown-item">
+            <div class="counter">
+                <span id="minutes">00</span>
+            </div>
+            <small>Minutes</small>
+        </div>
+
+        <div class="countdown-item">
+            <div class="counter">
+                <span id="seconds">00</span>
+            </div>
+            <small>Seconds</small>
+        </div>
+
+    </div>
+</section>
+
+
+        </div> <!-- end hero-content -->   
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about">
+
+        <div class="row row-y-center about-content" style="margin-top: 40px; margin-bottom: -120px;">
+
+           <div class="column-full">
+    <h1 class="subhead" style="font-size: 40px; color: white;">
+        <span id="typed-white" style="color: white;"></span><br>
+        <span id="typed-gold" style="font-size: 50px; color: #c72828; margin-top: -20px;"></span>
+        <span id="cursor" style="border-right: 2px solid white; margin-left: 2px;"></span>
+    </h1>
+    <p class="lead" style="font-size: 20px; ">
+        Revival Summit is a sacred gathering dedicated to spiritual renewal, covenant alignment, 
+        and generational restoration. It calls believers beyond routine religion into a sincere, 
+        obedient walk with God through repentance, biblical reflection, prayer, and intergenerational 
+        engagement, raising a Christ-centered generation committed to authentic revival as a lifestyle, 
+        not just an event.
+    </p>
+</div>
+
+
+        </div> <!-- end about-content -->
+
+    </section> <!-- end s-about -->
+
+
+
+    <!-- connect
+    ================================================== -->
+    <section class="s-connect">
+
+        <div class="row connect-content">
+            <div class="column large-half tab-full reveal-left">
+                <h3 class="display-1">Program Details.</h3>
+                <p>
+                Revival Summit 2026 invites participants to return, renew, and rise. 
+                Through Scripture-centered teaching, prayer, worship, and intergenerational 
+                engagement, every believer is called to consecrate their life afresh and 
+                experience authentic revival. <a href="program-details.html" style="font-size: 16px;">learn more</a>
+                </p>
+
+                
+            </div>
+            <div class="column large-half tab-full reveal-left">
+                <h3 class="display-1">Who This Summit is For</h3>
+                <p>
+                This Summit is for those who hunger for authentic revival, desire spiritual 
+                depth over noise, and long to walk faithfully in their generation. It is a 
+                sacred invitation to recommit, embrace revival as a lifestyle, and align your 
+                life with God’s purposes. <a href="program-details.html" style="font-size: 16px;">learn more</a>
+                </p>
+
+            </div>
+        </div> <!-- end connect-content  -->
+
+    </section> <!-- end s-connect -->
+
+<section class="image-strip contact-strip" style="background-image: url('images/church.jpg');">
+    <div class="gold-overlay"></div>
+
+    <div class="strip-content">
+
+        <!-- FLOATING FLIP BOX (LEFT) -->
+        <div class="flip-card-wrapper">
+
+            <!-- Hidden toggle for mobile -->
+    <input type="checkbox" class="flip-toggle" />
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+
+                    <!-- FRONT -->
+                    <div class="flip-card-front">
+                        <h4 style="color: white;">Venue:</h4>
+                        <p style="font-size: 18px;">International Conference Center, University of Ibadan Second gate. Agbowo, UI, Ibadan</p>
+                    </div>
+
+                    <!-- BACK -->
+                    <div class="flip-card-back">
+                        <h4 style="color: white;">Join Us</h4>
+                        <p style="font-size: 18px;">Revival Summit 2026 <br>August 7th – 8th, 2026</p>
+                        <a href="https://www.google.com/maps/dir//International+conference+center,+FW24%2BX56,+University+of,+Ibadan+200132,+Oyo/@6.7055105,3.4094639,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1039937656f5c3a1:0x8c1664861947b749!2m2!1d3.9053812!2d7.4524178?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" class="box-btn" style="color: lightblue">Get Direction</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- TEXT CONTENT (RIGHT) -->
+        <div class="strip-text">
+            <span class="tagline" style="color: white;">You are a Speacial Guest</span>
+            <h2 style="color: white;">Don’t hesitate to join us! We are expecting You.</h2>
+            <p style="font-size: 18px; color: white;">
+                Join us for a life-changing encounter! With expectations of over 3,000 attendees gathering from 
+                across the nation and the globe, 
+                prepare to be blessed. Experience the power of the Word as 30+ anointed 
+                ministers share divine revelation. Come with high expectations!
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- events
+    ================================================== -->
+    <section class="s-events">
+    <div class="row block-large-1-2 block-900-full events-list">
+            <div class="column-full">
+                <h3 class="display-1 events-list__item-title" style="font-size: 25px;">
+                    <a href="speakers.html" title="">Meet The <br><span style="font-size: 40px; color: goldenrod;">SPEAKERS</span></a>
+                </h3>
+                
+                <div class="ministers-carousel">
+    <div class="ministers-track">
+
+        <!-- CARD -->
+        <div class="minister-card">
+            <img src="images/speakers/speaker-1.jpg" alt="Rev. (Dr.) Mike Oye" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Rev. (Dr.) Mike Oye</a>
+
+                    </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-7.jpg" alt="Apostle Yemi Ayodele" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Apostle Yemi Ayodele</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-3.jpg" alt="Rev’d Matthew Owojaiye" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Rev’d Matthew Owojaiye</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+
+        </div>
+
+             <div class="minister-card">
+            <img src="images/speakers/speaker-9.jpg" alt="Rev’d Bayo Famonure" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Rev’d Bayo Famonure</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-2.jpg" alt="Rev'd Emiko Amotsuka" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Rev'd Emiko Amotsuka</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-4.jpg" alt="Rev’d Austen Chimdi Ukachi" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Rev’d Austen Chimdi Ukachi</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-6.jpg" alt="Professor Kayode Oyebode Adebowale" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Professor Kayode Oyebode Adebowale</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-10.jpg" alt="Dr Panam Percy Paul" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a href="https://www.instagram.com/panampercypaul?igsh=c25saHRmdmlneHR0" target="_blank" class="minister-link"  style="color: white;">Dr Panam Percy Paul</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+        
+         <div class="minister-card">
+            <img src="images/speakers/speaker-5.jpg" alt="Pastor Poju Oyemade" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a href="https://www.instagram.com/pastorpoju?igsh=MWEwcDNyNGZkNWNneA==" target="_blank" class="minister-link"  style="color: white;">Pastor Poju Oyemade</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-8.jpg" alt="Dr David Ogbueli" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a href="https://www.instagram.com/pastordavidogbueli?igsh=ejY3OGJ4c2N6OXVk" target="_blank" class="minister-link"  style="color: white;">Dr David Ogbueli</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+        <div class="minister-card">
+            <img src="images/speakers/speaker-11.jpg" alt="Engineer Steve Olumuyiwa" loading="lazy">
+            <div class="minister-info">
+                <h4>
+                    <a class="minister-link"  style="color: white;">Engineer Steve Olumuyiwa</a>
+                </h4>
+                <span>Speaker</span>
+            </div>
+        </div>
+
+   
+
+        <!-- ADD MORE MINISTERS BELOW (same structure) -->
+
+    </div>
+</div>
+
+            </div> <!-- end events-list__item -->
+           
+
+        </div> <!-- end events-list -->
+
+    </section> <!-- end s-events -->
+
+
+    <!-- series
+    ================================================== -->
+    <section class="s-series">
+
+        <div class="series-img" style="background-image: url('images/wheel-2000.jpg');"></div>
+
+        <div class="row row-y-center series-content">
+
+            <div class="column large-half medium-full">
+                <h3 class="subhead">Live Revival Summit</h3>
+                <h2>Experience Renewal. Join the Revival Live.</h2>
+                <p>
+                Be part of the Revival Summit wherever you are. This live stream gives you direct 
+                access to powerful teaching, prayer, worship, and moments of spiritual renewal as 
+                they unfold. Don’t just hear about revival, step into it and experience the move of 
+                God in real time.
+                </p>
+            </div> <!-- end column -->
+
+            <div class="column large-half medium-full">
+                <div class="series-content__buttons">
+                    <a href="" class="btn btn--large h-full-width">Watch the Live Stream</a>
+                </div>
+
+                <div class="series-content__subscribe">
+                    <p>
+                    Watch Live · Stay Connected · Be Transformed
+                    </p>
+                    
+                    <ul class="series-content__subscribe-links">
+                        <li class="ss-youtube"><a href="#0">Youtube</a></li>
+                    </ul>
+                </div>
+            </div> <!-- end column -->
+            
+        </div> <!-- series-content -->
+
+    </section> <!-- end s-series -->
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="row footer-top">
+            <div class="column large-4 medium-5 tab-full">
+                <div class="footer-logo">
+                    <a class="site-footer-logo" href="index.html">
+                        <img src="images/logo.png" style="width:auto; height:50px;" alt="Homepage"> 
+                        <span class="logo-text">Revival Summit 2026</span>
+                    </a>
+                </div>  <!-- footer-logo -->
+                <p>
+               Dedicated to calling believers back to covenant faithfulness, spiritual renewal, and 
+               authentic obedience to Christ, while bridging generations through prayer, teaching, and 
+               worship, awakening transformed lives equipped to carry revival, influence communities, and 
+               reflect the gospel in every sphere of life. 
+                </p>
+               <div class="footer-socials">
+    <a href="https://facebook.com/yourpage" target="_blank" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://x.com/yourpage" target="_blank" class="social-btn x">
+        <i class="fab fa-x-twitter"></i> <!-- Font Awesome X icon -->
+    </a>
+    <a href="https://www.instagram.com/the_revival_summit?igsh=d21hZnZ4Y3JlaXA5" target="_blank" class="social-btn instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://youtube.com/yourpage" target="_blank" class="social-btn youtube">
+        <i class="fab fa-youtube"></i>
+    </a>
+</div>
+
+            </div>
+            <div class="column large-half tab-full">
+                <div class="row">
+                    <div class="column large-7 medium-full">
+                        <h4 class="h6">Revival Venue</h4>
+                        <p>
+                       International Conference Center, <br>
+                       University of Ibadan Second gate.<br>
+                       Agbowo, UI, Ibadan
+                        </p>
+        
+                        <p>
+                        <a href="https://www.google.com/maps/dir//International+conference+center,+FW24%2BX56,+University+of,+Ibadan+200132,+Oyo/@6.7055105,3.4094639,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1039937656f5c3a1:0x8c1664861947b749!2m2!1d3.9053812!2d7.4524178?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn btn--footer">Get Direction</a>
+                        </p>
+                    </div>
+                    <div class="column large-5 medium-full">
+                        <h4 class="h6">Quick Links</h4>
+                       <ul class="footer-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="theme-overview.html">Theme Overview</a></li>
+                            <li><a href="program-details.html">More about the program</a></li>
+                            <li><a href="prayer-outline.html">Prayer Outline</a></li>
+                            <li><a href="speakers.html">Speakers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end footer-top -->
+
+        <div class="row footer-bottom">
+            <div class="column ss-copyright">
+                <span>© Copyright Revival Summit 2026</span> 
+            </div>
+        </div> <!-- footer-bottom -->
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdNFBjdsTx9tTF7xKFOJy6pTtk-PO-I17LGej8tBxG2Cm2Acg/closedform" class="floating-cta">
+    Register Now
+</a>
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const cta = document.querySelector(".floating-cta");
+    const footer = document.querySelector("footer"); // adjust if your footer has a different class/id
+
+    window.addEventListener("scroll", function() {
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (footerTop < windowHeight) {
+            // Footer is visible, hide CTA
+            cta.style.opacity = "0";
+            cta.style.pointerEvents = "none";
+        } else {
+            // Footer not reached, show CTA
+            cta.style.opacity = "1";
+            cta.style.pointerEvents = "auto";
+        }
+    });
+});
+</script>
+
+
+<script>
+const textWhite = "What is";
+const textGold = "Revival Summit?";
+
+const typedWhite = document.getElementById("typed-white");
+const typedGold = document.getElementById("typed-gold");
+
+const cursor = document.getElementById("cursor");
+
+let indexWhite = 0;
+let indexGold = 0;
+let typingForward = true;
+
+function type() {
+    if (typingForward) {
+        // Type "What is"
+        if (indexWhite < textWhite.length) {
+            typedWhite.innerHTML += textWhite.charAt(indexWhite);
+            indexWhite++;
+        } else if (indexGold < textGold.length) {
+            // Type "Revival Summit?"
+            typedGold.innerHTML += textGold.charAt(indexGold);
+            indexGold++;
+        } else {
+            // Done typing, pause before deleting
+            typingForward = false;
+            setTimeout(type, 1000);
+            return;
+        }
+    } else {
+        // Delete text backwards
+        if (indexGold > 0) {
+            typedGold.innerHTML = textGold.substring(0, indexGold - 1);
+            indexGold--;
+        } else if (indexWhite > 0) {
+            typedWhite.innerHTML = textWhite.substring(0, indexWhite - 1);
+            indexWhite--;
+        } else {
+            typingForward = true;
+        }
+    }
+    setTimeout(type, 150); // typing speed
+}
+
+// Cursor blink effect
+setInterval(() => {
+    cursor.style.visibility = cursor.style.visibility === "visible" ? "hidden" : "visible";
+}, 500);
+
+type();
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".ministers-track");
+    const cards = document.querySelectorAll(".minister-card");
+
+    const cardWidth = cards[0].offsetWidth + 45; // card + gap
+    const visibleCards = 4;
+    let index = 0;
+    let intervalId;
+
+    function moveNext() {
+        index++;
+
+        if (index > cards.length - visibleCards) {
+            index = 0;
+        }
+
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+
+    function startAutoSlide() {
+        intervalId = setInterval(moveNext, 3500);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(intervalId);
+    }
+
+    // Start sliding
+    startAutoSlide();
+
+    // Pause on hover
+    cards.forEach(card => {
+        card.addEventListener("mouseenter", stopAutoSlide);
+        card.addEventListener("mouseleave", startAutoSlide);
+    });
+});
+</script>
+
+
+<style>
+@media (max-width:768px){
+
+/* Hero container spacing */
+.hero-content{
+padding:0 15px !important;
+}
+
+/* All hero text sizes */
+.hero-slide h1{
+font-size:1.9rem !important;
+line-height:1.2 !important;
+}
+
+.hero-slide h2{
+font-size:1.4rem !important;
+line-height:1.3 !important;
+}
+
+.hero-slide h3{
+font-size:1.2rem !important;
+}
+
+.hero-slide p{
+font-size:0.95rem !important;
+}
+
+.hero-slide span{
+font-size:0.9rem !important;
+}
+
+/* Buttons if any */
+.hero-slide .btn,
+.hero-slide a{
+font-size:0.9rem !important;
+padding:10px 18px !important;
+}
+
+/* Prevent text hiding under countdown */
+.hero-slide{
+padding-bottom:80px !important;
+}
+
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const reveals = document.querySelectorAll(".reveal-left");
+
+  function revealOnScroll() {
+    const trigger = window.innerHeight * 0.85;
+
+    reveals.forEach((el, index) => {
+      const top = el.getBoundingClientRect().top;
+
+      if (top < trigger) {
+        setTimeout(() => {
+          el.classList.add("active");
+        }, index * 300);
+      }
+    });
+  }
+
+  window.addEventListener("scroll", revealOnScroll);
+  window.addEventListener("load", revealOnScroll);
+});
+</script>
+
+
+</body>
