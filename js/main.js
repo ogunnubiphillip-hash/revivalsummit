@@ -163,7 +163,7 @@ window.addEventListener('scroll', () => {
 
 
 // Set target date
-const targetDate = new Date("Aug 7, 2026 09:00:00").getTime();
+const targetDate = new Date("Aug 7, 2026 00:00:00").getTime();
 
 const elements = {
     days: document.getElementById("days"),
