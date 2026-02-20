@@ -6,9 +6,12 @@ This project is a fully customized website for the Revival Summit event.
 
 This site was built using a **modified version of a free HTML template** from [Styleshout](https://www.styleshout.com/). All design, content, and code have been fully customized for this project.
 
+##Live site:
+https://revivalsummit.org
+
 ## GitHub Pages
 
-The live site can be viewed via GitHub Pages (once enabled):  
+GitHub Pages version:
 https://ogunnubiphillip-hash.github.io/revivalsummit/
 
 ## License / Attribution
