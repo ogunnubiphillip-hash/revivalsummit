@@ -5224,6 +5224,20 @@ html.no-csstransitions .hero-content {
 
 
 
+.volunteer-cta {
+    right: 23px;
+    bottom: 90px; /* pushes it above the Register button */
+
+    background: linear-gradient(135deg, #733066, #2c1327); /* WhatsApp green */
+    color: #fff !important;
+
+    box-shadow: 0 0 20px rgba(195, 149, 204, 0.7), 0 0 40px rgba(18, 140, 126, 0.4);
+    animation: none; /* ❌ removes pulse animation */
+}
+
+.volunteer-cta:hover {
+    box-shadow: 0 0 25px rgb(231, 145, 217), 0 0 50px rgba(18, 140, 126, 0.6);
+}
 
 
 

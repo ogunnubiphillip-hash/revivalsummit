@@ -245,3 +245,26 @@ if (window.innerWidth <= 768) {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const ctas = document.querySelectorAll(".floating-cta");
+    const footer = document.querySelector("footer");
+
+    window.addEventListener("scroll", function() {
+        const footerTop = footer.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (footerTop < windowHeight) {
+            ctas.forEach(cta => {
+                cta.style.opacity = "0";
+                cta.style.pointerEvents = "none";
+                cta.style.visibility = "hidden"; // 🔥 force hide
+            });
+        } else {
+            ctas.forEach(cta => {
+                cta.style.opacity = "1";
+                cta.style.pointerEvents = "auto";
+                cta.style.visibility = "visible"; // 🔥 force show
+            });
+        }
+    });
+});
