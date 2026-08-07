@@ -172,30 +172,52 @@ const elements = {
     seconds: document.getElementById("seconds")
 };
 
-setInterval(() => {
+const countdown = setInterval(() => {
+
     const now = new Date().getTime();
     const distance = targetDate - now;
 
+    // Stop countdown when event starts
+    if (distance <= 0) {
+        clearInterval(countdown);
+
+        Object.values(elements).forEach(el => {
+            if (el) {
+                el.innerText = "00";
+                el.classList.remove("flip");
+            }
+        });
+
+        return;
+    }
+
     const time = {
         days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000*60*60*24)) / (1000*60*60)),
-        minutes: Math.floor((distance % (1000*60*60)) / (1000*60)),
-        seconds: Math.floor((distance % (1000*60)) / 1000)
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000)
     };
 
-    // Update each counter with flip animation (safe version)
-for (let unit in time) {
-    let el = elements[unit];
-    if (!el) continue; // skip if element doesn't exist
 
-    if (el.innerText != String(time[unit]).padStart(2,'0')) {
-        el.classList.add('flip'); // add flip
-        setTimeout(() => {
-            el.innerText = String(time[unit]).padStart(2,'0');
-            el.classList.remove('flip'); // remove flip after transition
-        }, 300);
+    // Update each counter with flip animation
+    for (let unit in time) {
+
+        let el = elements[unit];
+
+        if (!el) continue;
+
+        const value = String(time[unit]).padStart(2, "0");
+
+        if (el.innerText !== value) {
+
+            el.classList.add("flip");
+
+            setTimeout(() => {
+                el.innerText = value;
+                el.classList.remove("flip");
+            }, 300);
+        }
     }
-}
 
 }, 1000);
 
