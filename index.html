@@ -31,6 +31,285 @@
     <link rel="manifest" href="site.webmanifest">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
+    <style>
+
+/* =======================
+   LIVE ANNOUNCEMENT BAR
+======================= */
+
+.live-banner{
+position:fixed;
+top:22;
+left:0;
+width:60%;
+background:linear-gradient(90deg,#850000,#c00000,#850000);
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:14px 20px;
+z-index:999999;
+font-size:15px;
+font-weight:600;
+box-shadow:0 10px 35px rgba(0,0,0,.25);
+gap:20px;
+}
+
+.live-banner span{
+display:flex;
+align-items:center;
+}
+
+.live-dot{
+width:10px;
+height:10px;
+background:#ff4040;
+border-radius:50%;
+margin-right:8px;
+animation:pulse 1.2s infinite;
+}
+
+.live-banner a{
+background:#fff;
+color:#a30000;
+padding:10px 18px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.live-banner a:hover{
+transform:translateY(-2px);
+}
+
+body{
+padding-top:60px;
+}
+
+
+/* =======================
+FLOATING BUTTON
+======================= */
+
+.live-float{
+
+position:fixed;
+
+bottom:155px;
+
+right:25px;
+
+background:#c00000;
+
+color:#fff;
+
+padding:16px 22px;
+
+border-radius:60px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+font-size:15px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+z-index:999999;
+
+animation:pulse 2s infinite;
+
+transition:.3s;
+
+}
+
+.live-float:hover{
+
+transform:translateY(-4px);
+
+color:#fff;
+
+}
+
+
+/* =======================
+POPUP
+======================= */
+
+.live-popup{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.75);
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999999;
+
+}
+
+.popup-box{
+
+width:92%;
+
+max-width:520px;
+
+background:#141414;
+
+padding:45px;
+
+border-radius:25px;
+
+text-align:center;
+
+color:#fff;
+
+box-shadow:0 30px 80px rgba(0,0,0,.45);
+
+border:1px solid rgba(255,215,0,.2);
+
+animation:popup .45s ease;
+
+}
+
+.popup-box h2{
+
+font-size:38px;
+
+margin-bottom:15px;
+
+}
+
+.popup-box p{
+
+line-height:1.8;
+
+font-size:18px;
+
+}
+
+.popup-buttons{
+
+margin-top:30px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.popup-buttons a{
+
+padding:14px 24px;
+
+border-radius:35px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+.watch-live{
+
+background:gold;
+
+color:#000;
+
+}
+
+.close-popup{
+
+background:#333;
+
+color:#fff;
+
+cursor:pointer;
+
+}
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(255,0,0,.55);
+
+}
+
+70%{
+
+box-shadow:0 0 0 18px rgba(255,0,0,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(255,0,0,0);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.live-banner{
+
+flex-direction:column;
+
+gap:10px;
+
+padding:12px;
+
+font-size:13px;
+
+}
+
+.popup-box{
+
+padding:30px 22px;
+
+}
+
+.popup-box h2{
+
+font-size:28px;
+
+}
+
+}
+
+</style>
 </head>
 
 <script>
@@ -56,6 +335,24 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <body id="top">
+
+    <div class="live-banner">
+
+<span>
+
+<div class="live-dot"></div>
+
+National Revival Summit 2026 is LIVE today from the International Conference Centre, University of Ibadan.
+
+</span>
+
+<a href="https://www.youtube.com/channel/UCYAImZBIQytm4rMmCFuZdDQ" target="_blank">
+
+▶ Watch Live
+
+</a>
+
+</div>
 
     <!-- preloader
     ================================================== -->
@@ -504,7 +801,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <div class="column large-half medium-full">
                 <div class="series-content__buttons">
-                    <a href="" class="btn btn--large h-full-width">Watch the Live Stream</a>
+                    <a href="https://www.youtube.com/channel/UCYAImZBIQytm4rMmCFuZdDQ" class="btn btn--large h-full-width">Watch the Live Stream</a>
                 </div>
 
                 <div class="series-content__subscribe">
@@ -513,7 +810,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </p>
                     
                     <ul class="series-content__subscribe-links">
-                        <li class="ss-youtube"><a href="#0">Youtube</a></li>
+                        <li class="ss-youtube"><a href="https://www.youtube.com/channel/UCYAImZBIQytm4rMmCFuZdDQ">Youtube</a></li>
                     </ul>
                 </div>
             </div> <!-- end column -->
@@ -794,5 +1091,70 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+
+<a href="https://www.youtube.com/channel/UCYAImZBIQytm4rMmCFuZdDQ"
+target="_blank"
+class="live-float">
+
+🔴 WATCH LIVE
+
+</a>
+
+<div class="live-popup" id="livePopup">
+
+<div class="popup-box">
+
+<h2 style="color: #fff;">🎉 Revival Summit is Live!</h2>
+
+<p>
+
+Join us now for powerful worship, prayer and the ministry of God's Word, streaming live from the International Conference Centre, University of Ibadan.
+
+</p>
+
+<div class="popup-buttons">
+
+<a href="https://www.youtube.com/channel/UCYAImZBIQytm4rMmCFuZdDQ"
+target="_blank"
+class="watch-live">
+
+▶ Watch Live
+
+</a>
+
+<a class="close-popup"
+onclick="closeLivePopup()">
+
+Continue to Website
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const popup = document.getElementById("livePopup");
+
+    popup.style.display = "none";
+
+    setTimeout(() => {
+        popup.style.display = "flex";
+    }, 800);
+
+});
+
+function closeLivePopup(){
+
+    document.getElementById("livePopup").style.display = "none";
+
+}
+
+</script>
 
 </body>

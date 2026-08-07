@@ -347,4 +347,223 @@ The Renewal of the Oath is therefore not symbolic — it is a spiritual act of d
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+
+<style>
+
+.live-popup{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.75);
+
+display:none;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:9999999;
+
+}
+
+.popup-box{
+
+width:92%;
+
+max-width:520px;
+
+background:#141414;
+
+padding:45px;
+
+border-radius:25px;
+
+text-align:center;
+
+color:#fff;
+
+box-shadow:0 30px 80px rgba(0,0,0,.45);
+
+border:1px solid rgba(255,215,0,.2);
+
+animation:popup .45s ease;
+
+}
+
+.popup-box h2{
+
+font-size:38px;
+
+margin-bottom:15px;
+
+}
+
+.popup-box p{
+
+line-height:1.8;
+
+font-size:18px;
+
+}
+
+.popup-buttons{
+
+margin-top:30px;
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.popup-buttons a{
+
+padding:14px 24px;
+
+border-radius:35px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.watch-live{
+
+background:gold;
+
+color:#000;
+
+}
+
+.watch-live:hover{
+
+transform:translateY(-3px);
+
+}
+
+.close-popup{
+
+background:#333;
+
+color:#fff;
+
+cursor:pointer;
+
+}
+
+.close-popup:hover{
+
+background:#444;
+
+}
+
+@keyframes popup{
+
+from{
+
+opacity:0;
+
+transform:translateY(50px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.popup-box{
+
+padding:30px 22px;
+
+}
+
+.popup-box h2{
+
+font-size:28px;
+
+}
+
+.popup-box p{
+
+font-size:16px;
+
+}
+
+}
+
+</style>
+
+<div class="live-popup" id="livePopup">
+
+<div class="popup-box">
+
+<h2 style="color: #fff;">🎉 Revival Summit is Live!</h2>
+
+<p>
+
+Join us now for powerful worship, prayer and the ministry of God's Word, streaming live from the International Conference Centre, University of Ibadan.
+
+</p>
+
+<div class="popup-buttons">
+
+<a href="https://www.youtube.com/channel/UCYAImZBIQytm4rMmCFuZdDQ"
+target="_blank"
+class="watch-live">
+
+▶ Watch Live
+
+</a>
+
+<a href="javascript:void(0)"
+class="close-popup"
+onclick="closeLivePopup()">
+
+Continue to Website
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const popup = document.getElementById("livePopup");
+
+    setTimeout(() => {
+        popup.style.display = "flex";
+    }, 800);
+
+});
+
+function closeLivePopup(){
+
+    document.getElementById("livePopup").style.display = "none";
+
+}
+
+</script>
+
 </body>
